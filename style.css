@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
 }
 
-.wrapper, .portafolio{
+.wrapper {
     width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
@@ -165,6 +165,14 @@ span {
 
 }
 
+.portafolio {
+    width: 100vw;
+    height: 115vw;
+    background-color: black;
+
+}
+
+
 /* Estilos de Mi Portafolio */
 
 .portafolio-encabezado {
@@ -177,6 +185,8 @@ span {
 .portafolio-encabezado h2 {
 
     font-size: 2.5em;
+    color: white;
+    padding: 10px;
 }
 
 .portafolio .contenedor-proyectos{
@@ -184,13 +194,20 @@ span {
     width: 80vw;
     height: 80vh;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
 }
 
 .card {
 
+    
     width: 300px;
+    color: white;
+    background-color: rgb(80, 72, 182);
+    border-radius: 20px;
+    margin: 1.2em;
+    padding: 10px;
     /* background-color: rgb(52, 79, 188) */
 }
 
@@ -204,7 +221,9 @@ span {
 
 .card__title {
 
-    padding: 20px;
+    padding: 15px;
+    color: white;
+
 
 }
 
@@ -230,4 +249,29 @@ span {
 
 }
 
+.card .proyecto-detalles {
 
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    margin: 2em;
+    justify-content: center;
+        
+}
+
+.card .proyecto-detalles a {
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+
+}
+
+.contenedor-detalles-proyecto {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+    
+}
